@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg py-2">
       <div className="container-fluid mx-md-5">
         <a className="navbar-brand fw-bolder" href="#">
           FlipIt
@@ -18,21 +18,26 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          className="d-lg-flex justify-content-between  collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
           <input
             className="form-control mt-1 navbar-search"
             type="search"
             placeholder="Search Product"
             aria-label="Search"
+            style={{ maxWidth: "1090px" }}
           />
-          <ul className="navbar-nav mx-md-4">
+
+          <ul className="d-lg-flex align-items-lg-center gap-3 navbar-nav ml-2">
             <li className="nav-item">
-              <a className="nav-link  mt-2 fw-medium" href="#">
+              <a className="  nav-link  fw-medium" href="#">
                 Login
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link mt-2 fw-medium" href="#">
+            <li className="nav-item ">
+              <a className="nav-link fw-medium" href="#">
                 SignUp
               </a>
             </li>
