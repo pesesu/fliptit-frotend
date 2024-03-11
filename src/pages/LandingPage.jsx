@@ -14,13 +14,18 @@ const LandingPage = () => {
       <div style={{ background: "#E9E9E9" }}>
         <Navbar />
 
-        <div className=" d-flex justify-content-center font-bold display-3">
-          <h3 className="w-75 p-5 text-center">
+        <div
+          style={{ padding: "80px 0" }}
+          className=" d-flex justify-content-center font-bold display-3"
+        >
+          <h3 style={{ maxWidth: "50%" }} className="text-center">
             We Revolutionalise Commerce with Seamless Peer-to-Peer Transactions
           </h3>
         </div>
       </div>
+      {/* banner Part End  */}
 
+      {/* Product Category */}
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -28,7 +33,8 @@ const LandingPage = () => {
         navigation={true}
         modules={[Navigation]}
         autoplay={{ delay: 1000 }}
-        className="mySwiper"
+        style={{ padding: "80px 0", marginTop: "110px", marginBottom: "30px" }}
+        className="mySwiper mx-md-5"
       >
         {CardsData.map((card, index) => (
           <SwiperSlide key={card.id}>
@@ -57,6 +63,7 @@ const LandingPage = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      {/* Product Category End */}
     </div>
   );
 };
