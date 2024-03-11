@@ -27,3 +27,17 @@ code {
   color: black !important;
   height: 50px !important;
 }
+
+.white-bg{
+  background: white;
+}
+
+.product-price{
+  color:  #00754B;
+}
+
+.product-cards{
+  max-width: 450px !important;
+  max-height: 400px !important;
+  border-radius: 0 !important;
+}
