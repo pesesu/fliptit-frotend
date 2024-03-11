@@ -55,4 +55,9 @@ export const CardsData = [
     imagePath: `${process.env.PUBLIC_URL}/assets/img/Laptop.png`,
     name: "Electronics",
   },
+  {
+    id: 12,
+    imagePath: `${process.env.PUBLIC_URL}/assets/img/Laptop.png`,
+    name: "Electronics",
+  },
 ];

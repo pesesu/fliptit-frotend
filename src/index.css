@@ -21,3 +21,9 @@ code {
   height: 3rem !important;
  padding: 8px,16px,8px,16px !important;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: black !important;
+  height: 50px !important;
+}
