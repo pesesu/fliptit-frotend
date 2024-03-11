@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import { CardsData } from "../components/CardsData";
+import { CardsData, productsData } from "../components/CardsData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,6 +8,18 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 const LandingPage = () => {
+  const formatPrice = (price) => {
+    if (isNaN(price)) {
+      return "Invalid Price";
+    }
+
+    const formattedPrice = price
+      .toFixed(2)
+      .replace(/\d(?=(\d{3})+\.)/g, "$&,")
+      .replace(".00", "");
+
+    return formattedPrice;
+  };
   return (
     <div>
       {/* banner Part  */}
@@ -64,6 +76,37 @@ const LandingPage = () => {
         ))}
       </Swiper>
       {/* Product Category End */}
+
+      {/* Products */}
+      <div style={{ background: "#EDEDED", padding: "80px 0" }}>
+        <div className="container-fluid">
+          <div className="row mx-md-5 align-items-center justify-content-center">
+            {productsData.map((products) => (
+              <div
+                key={products.id}
+                className="col-md-3 mt-5"
+              >
+                <div className="card product-cards">
+                  <img
+                    src={products.imagePath}
+                    className="card-img-top img-fluid"
+                    alt={products.name}
+                    style={{ borderRadius: "0" }}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">{products.name}</h5>
+                    <p className="card-text product-price fw-bold mb-4">
+                      # {formatPrice(products.price)}{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Products End */}
     </div>
   );
 };
