@@ -37,7 +37,8 @@ code {
 }
 
 .product-cards{
-  max-width: 450px !important;
-  max-height: 400px !important;
+  /* max-width: 450px !important; */
+  /* max-height: 400px !important; */
+  border: none !important;
   border-radius: 0 !important;
 }
