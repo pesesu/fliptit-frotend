@@ -31,9 +31,9 @@ const LandingPage = () => {
           style={{ padding: "80px 0" }}
           className=" d-flex justify-content-center font-bold display-3"
         >
-          <h3 style={{ maxWidth: "50%" }} className="text-center">
+          <p style={{ maxWidth: "50%" }} className="text-center fs-4 fw-semibold">
             We Revolutionalise Commerce with Seamless Peer-to-Peer Transactions
-          </h3>
+          </p>
         </div>
       </div>
       {/* banner Part End  */}

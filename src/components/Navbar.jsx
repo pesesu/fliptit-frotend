@@ -41,23 +41,25 @@ const Navbar = () => {
                 SignUp
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                <button type="button" class="btn btn-dark navbar-button">
-                  Sell
-                </button>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                <button
-                  type="button"
-                  class="btn btn-outline-dark navbar-button"
-                >
-                  Logistic
-                </button>
-              </a>
-            </li>
+            <div className="d-flex flex-sm-column flex-lg-row">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <button type="button" class="btn btn-dark navbar-button">
+                    Sell
+                  </button>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark navbar-button"
+                  >
+                    Logistic
+                  </button>
+                </a>
+              </li>
+            </div>
           </ul>
         </div>
       </div>
