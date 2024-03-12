@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { CardsData, productsData } from "../components/CardsData";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,6 +9,7 @@ import { Navigation } from "swiper/modules";
 import Footer from "../components/Footer";
 
 const LandingPage = () => {
+  const [startIndex, setStartIndex] = useState(0);
   const formatPrice = (price) => {
     if (isNaN(price)) {
       return "Invalid Price";
@@ -21,6 +22,23 @@ const LandingPage = () => {
     return formattedPrice;
   };
 
+  let swiper;
+
+  const handleNext = () => {
+    setStartIndex((prevIndex) => (prevIndex + 6) % CardsData.length);
+    if (swiper) {
+      swiper.slideNext();
+    }
+  };
+
+  const handlePrev = () => {
+    setStartIndex(
+      (prevIndex) => (prevIndex - 6 + CardsData.length) % CardsData.length
+    );
+    if (swiper) {
+      swiper.slidePrev();
+    }
+  };
   return (
     <div>
       {/* banner Part  */}
@@ -31,7 +49,10 @@ const LandingPage = () => {
           style={{ padding: "80px 0" }}
           className=" d-flex justify-content-center font-bold display-3"
         >
-          <p style={{ maxWidth: "50%" }} className="text-center fs-4 fw-semibold">
+          <p
+            style={{ maxWidth: "50%" }}
+            className="text-center fs-4 fw-semibold lh-base"
+          >
             We Revolutionalise Commerce with Seamless Peer-to-Peer Transactions
           </p>
         </div>
@@ -43,9 +64,13 @@ const LandingPage = () => {
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
-        navigation={true}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
         modules={[Navigation]}
         autoplay={{ delay: 1000 }}
+        onSwiper={(swiperInstance) => (swiper = swiperInstance)}
         style={{ padding: "80px 0", marginTop: "110px", marginBottom: "30px" }}
         className="mySwiper mx-md-5"
       >
@@ -53,7 +78,7 @@ const LandingPage = () => {
           <SwiperSlide key={card.id}>
             <div className="container-fluid mt-3">
               <div className="row mx-md-5">
-                {CardsData.slice(index, index + 6).map((card) => (
+                {CardsData.slice(startIndex, startIndex + 6).map((card) => (
                   <div key={card.id} className="col-md-2 my-2">
                     <div
                       style={{ borderRadius: "20px" }}
@@ -75,6 +100,9 @@ const LandingPage = () => {
             </div>
           </SwiperSlide>
         ))}
+        {/* Swiper navigation buttons */}
+        <div className="swiper-button-next" onClick={handleNext} />
+        <div className="swiper-button-prev" onClick={handlePrev} />
       </Swiper>
       {/* Product Category End */}
 
@@ -105,7 +133,6 @@ const LandingPage = () => {
         </div>
       </div>
       {/* Products End */}
-
       {/* Footer */}
       <Footer />
       {/* Footer End */}
