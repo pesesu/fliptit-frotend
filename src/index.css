@@ -20,9 +20,13 @@ code {
 }
 
 .navbar-button{
-  height: 3rem !important;
+  height: 2.8rem !important;
   border-radius: 4px !important ;
  padding: 8px,16px,8px,16px !important;
+}
+
+.navbar-padding{
+  padding-right: 0 !important;
 }
 
 .swiper-button-prev,
@@ -48,6 +52,15 @@ code {
 
 .flipit-black{
   color: #222222;
+}
+
+ul{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.navbar-padding{
+  padding-left: 25px !important;
 }
 
 
