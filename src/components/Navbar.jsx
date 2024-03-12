@@ -27,10 +27,10 @@ const Navbar = () => {
             type="search"
             placeholder="Search Product"
             aria-label="Search"
-            style={{ maxWidth: "1090px" }}
+            // style={{ maxWidth: "1090px" }}
           />
 
-          <ul className="d-lg-flex align-items-lg-center gap-2 navbar-nav ml-2">
+          <ul className="d-lg-flex navbar-padding  align-items-lg-center gap-2 navbar-nav ml-2 navbar-padding">
             <li className="nav-item">
               <a className="  nav-link  fw-medium" href="#">
                 Login
@@ -41,16 +41,16 @@ const Navbar = () => {
                 SignUp
               </a>
             </li>
-            <div className="d-flex flex-sm-column flex-lg-row">
+            <div className="d-flex gap-2 flex-column flex-md-column flex-lg-row">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="" href="#">
                   <button type="button" class="btn btn-dark navbar-button">
                     Sell
                   </button>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="" href="#">
                   <button
                     type="button"
                     class="btn btn-outline-dark navbar-button"
