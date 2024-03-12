@@ -20,7 +20,7 @@ const LandingPage = () => {
 
     return formattedPrice;
   };
-  
+
   return (
     <div>
       {/* banner Part  */}
@@ -108,6 +108,7 @@ const LandingPage = () => {
 
       {/* Footer */}
       <Footer />
+      {/* Footer End */}
     </div>
   );
 };
