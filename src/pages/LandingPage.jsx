@@ -6,13 +6,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import Footer from "../components/Footer";
 
 const LandingPage = () => {
   const formatPrice = (price) => {
     if (isNaN(price)) {
       return "Invalid Price";
     }
-
     const formattedPrice = price
       .toFixed(2)
       .replace(/\d(?=(\d{3})+\.)/g, "$&,")
@@ -20,6 +20,7 @@ const LandingPage = () => {
 
     return formattedPrice;
   };
+  
   return (
     <div>
       {/* banner Part  */}
@@ -81,21 +82,19 @@ const LandingPage = () => {
       <div style={{ background: "#EDEDED", padding: "80px 0" }}>
         <div className="container-fluid">
           <div className="row mx-md-5 align-items-center justify-content-center">
+            <h3>Listings close to you</h3>
             {productsData.map((products) => (
-              <div
-                key={products.id}
-                className="col-md-3 mt-5"
-              >
+              <div key={products.id} className="col-md-4 col-lg-3 mt-3">
                 <div className="card product-cards">
                   <img
                     src={products.imagePath}
-                    className="card-img-top img-fluid"
+                    className="img-fluid"
                     alt={products.name}
                     style={{ borderRadius: "0" }}
                   />
                   <div className="card-body">
                     <h5 className="card-title">{products.name}</h5>
-                    <p className="card-text product-price fw-bold mb-4">
+                    <p className="card-text product-price fw-bold">
                       # {formatPrice(products.price)}{" "}
                     </p>
                   </div>
@@ -105,8 +104,10 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-
       {/* Products End */}
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
