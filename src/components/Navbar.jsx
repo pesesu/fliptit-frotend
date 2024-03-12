@@ -30,7 +30,7 @@ const Navbar = () => {
             style={{ maxWidth: "1090px" }}
           />
 
-          <ul className="d-lg-flex align-items-lg-center gap-3 navbar-nav ml-2">
+          <ul className="d-lg-flex align-items-lg-center gap-2 navbar-nav ml-2">
             <li className="nav-item">
               <a className="  nav-link  fw-medium" href="#">
                 Login
