@@ -131,9 +131,9 @@ const LandingPage = () => {
                           width:6,
                           height:6,
                           borderRadius:"50%",
-                          background:"#00754B"}}>
+                          background:"#444444"}}>
                         </div>
-                        <div><small>Lekki</small></div>
+                        <div className="fw-semibold"><small>2 KM</small></div>
                       </div>
                     </div>
                   </div>
