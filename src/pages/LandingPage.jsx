@@ -49,10 +49,7 @@ const LandingPage = () => {
           style={{ padding: "60px 0" }}
           className="d-flex justify-content-center font-bold display-3"
         >
-          <p
-            style={{ maxWidth: "60rem" }}
-            className="text-center fs-1 fw-bold"
-          >
+          <p style={{ maxWidth: "60rem" }} className="text-center fs-1 fw-bold">
             We Revolutionalise Commerce with Seamless Peer-to-Peer Transactions
           </p>
         </div>
@@ -81,7 +78,11 @@ const LandingPage = () => {
                 {CardsData.slice(startIndex, startIndex + 6).map((card) => (
                   <div key={card.id} className="col-md-2 my-2">
                     <div
-                      style={{ borderRadius: "20px", border:"none", background:"#F8F8F8" }}
+                      style={{
+                        borderRadius: "20px",
+                        border: "none",
+                        background: "#F8F8F8",
+                      }}
                       className="card shadow"
                     >
                       <div className="card-body text-center d-flex flex-column align-items-center justify-content-center">
@@ -91,7 +92,9 @@ const LandingPage = () => {
                           className="img-fluid mb-2"
                           style={{ maxWidth: "40px", maxHeight: "40px" }}
                         />
-                        <span><small>{card.name}</small></span>
+                        <span>
+                          <small>{card.name}</small>
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -121,19 +124,25 @@ const LandingPage = () => {
                     style={{ borderRadius: "0" }}
                   />
                   <div className="card-body pb-1">
-                    <h5 className="card-title fs-6 fw-normal lh-1">{products.name}</h5>
+                    <h5 className="card-title fs-6 fw-normal lh-1">
+                      {products.name}
+                    </h5>
                     <div className="d-flex justify-content-between align-items-start p-0 m-0">
                       <p className="product-price fw-semibold lh-1">
-                      &#8358; {formatPrice(products.price)}{" "}
+                        &#8358; {formatPrice(products.price)}{" "}
                       </p>
                       <div className="d-flex align-items-center gap-1">
-                        <div style={{
-                          width:6,
-                          height:6,
-                          borderRadius:"50%",
-                          background:"#444444"}}>
+                        <div
+                          style={{
+                            width: 6,
+                            height: 6,
+                            borderRadius: "50%",
+                            background: "#444444",
+                          }}
+                        ></div>
+                        <div className="fw-semibold">
+                          <small>2 KM</small>
                         </div>
-                        <div className="fw-semibold"><small>2 KM</small></div>
                       </div>
                     </div>
                   </div>
@@ -145,7 +154,10 @@ const LandingPage = () => {
       </div>
       {/* Products End */}
       {/* Footer */}
-      <Footer />
+      <div className="footer-border">
+        <Footer />
+      </div>
+
       {/* Footer End */}
     </div>
   );

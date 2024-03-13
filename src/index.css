@@ -26,11 +26,18 @@ code {
 .navbar-search:focus{
   background: #323232;
   color: #D2D2D2;
-  outline: none;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
+.navbar-search:focus::placeholder {
+  color: rgb(146, 141, 141) !important;
+}
+
+
+
 .navbar-search:active {
-  outline: none;
+  outline: none ;
 }
 
 .navbar-button{
@@ -84,3 +91,39 @@ ul{
 .navbar-padding{
   padding-left: 25px !important;
 }
+
+
+.footer-border{
+  border-top: 2px solid #ABAAAA ;
+}
+
+
+
+/* Extra small devices (phones, less than 576px wide) */
+@media (max-width: 575.98px) { 
+  /* Your CSS rules here for extra small devices */
+  .footer-text{
+    text-align: center;
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) { 
+  /* Your CSS rules here for small devices */
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) { 
+  /* Your CSS rules here for medium devices */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  /* Your CSS rules here for large devices */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  /* Your CSS rules here for extra large devices */
+}
+
