@@ -50,7 +50,7 @@ const LandingPage = () => {
           className="d-flex justify-content-center font-bold display-3"
         >
           <p
-            style={{ maxWidth: "40rem" }}
+            style={{ maxWidth: "60rem" }}
             className="text-center fs-1 fw-bold"
           >
             We Revolutionalise Commerce with Seamless Peer-to-Peer Transactions
