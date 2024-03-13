@@ -81,8 +81,8 @@ const LandingPage = () => {
                 {CardsData.slice(startIndex, startIndex + 6).map((card) => (
                   <div key={card.id} className="col-md-2 my-2">
                     <div
-                      style={{ borderRadius: "20px" }}
-                      className="card shadow-sm"
+                      style={{ borderRadius: "20px", border:"none", background:"#F8F8F8" }}
+                      className="card shadow"
                     >
                       <div className="card-body text-center d-flex flex-column align-items-center justify-content-center">
                         <img
