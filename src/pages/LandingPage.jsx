@@ -109,7 +109,7 @@ const LandingPage = () => {
       {/* Products */}
       <div style={{ background: "#EDEDED", padding: "52px 0" }}>
         <div className="container-fluid">
-          <div className="row g-3 mx-md-5 align-items-center justify-content-center">
+          <div className="row g-4 mx-md-5 align-items-center justify-content-center">
             <h4>Listings near to you</h4>
             {productsData.map((products) => (
               <div key={products.id} className="col-md-4 col-lg-3 mt-4">
