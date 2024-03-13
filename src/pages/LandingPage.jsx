@@ -46,12 +46,12 @@ const LandingPage = () => {
         <Navbar />
 
         <div
-          style={{ padding: "80px 0" }}
-          className=" d-flex justify-content-center font-bold display-3"
+          style={{ padding: "60px 0" }}
+          className="d-flex justify-content-center font-bold display-3"
         >
           <p
-            style={{ maxWidth: "50%" }}
-            className="text-center fs-4 fw-semibold lh-base"
+            style={{ maxWidth: "40rem" }}
+            className="text-center fs-1 fw-bold"
           >
             We Revolutionalise Commerce with Seamless Peer-to-Peer Transactions
           </p>
@@ -71,7 +71,7 @@ const LandingPage = () => {
         modules={[Navigation]}
         autoplay={{ delay: 1000 }}
         onSwiper={(swiperInstance) => (swiper = swiperInstance)}
-        style={{ padding: "80px 0", marginTop: "110px", marginBottom: "30px" }}
+        style={{ padding: "20px 0", marginTop: "60px", marginBottom: "30px" }}
         className="mySwiper mx-md-5"
       >
         {CardsData.map((card, index) => (
@@ -89,9 +89,9 @@ const LandingPage = () => {
                           src={card.imagePath}
                           alt={card.name}
                           className="img-fluid mb-2"
-                          style={{ maxWidth: "100px", maxHeight: "100px" }}
+                          style={{ maxWidth: "40px", maxHeight: "40px" }}
                         />
-                        <span>{card.name}</span>
+                        <span><small>{card.name}</small></span>
                       </div>
                     </div>
                   </div>
@@ -107,12 +107,12 @@ const LandingPage = () => {
       {/* Product Category End */}
 
       {/* Products */}
-      <div style={{ background: "#EDEDED", padding: "80px 0" }}>
+      <div style={{ background: "#EDEDED", padding: "52px 0" }}>
         <div className="container-fluid">
-          <div className="row mx-md-5 align-items-center justify-content-center">
-            <h3>Listings close to you</h3>
+          <div className="row g-3 mx-md-5 align-items-center justify-content-center">
+            <h4>Listings near to you</h4>
             {productsData.map((products) => (
-              <div key={products.id} className="col-md-4 col-lg-3 mt-3">
+              <div key={products.id} className="col-md-4 col-lg-3 mt-4">
                 <div className="card product-cards">
                   <img
                     src={products.imagePath}
@@ -120,11 +120,22 @@ const LandingPage = () => {
                     alt={products.name}
                     style={{ borderRadius: "0" }}
                   />
-                  <div className="card-body">
-                    <h5 className="card-title">{products.name}</h5>
-                    <p className="card-text product-price fw-bold">
-                      # {formatPrice(products.price)}{" "}
-                    </p>
+                  <div className="card-body pb-1">
+                    <h5 className="card-title fs-6 fw-normal lh-1">{products.name}</h5>
+                    <div className="d-flex justify-content-between align-items-start p-0 m-0">
+                      <p className="product-price fw-semibold lh-1">
+                      &#8358; {formatPrice(products.price)}{" "}
+                      </p>
+                      <div className="d-flex align-items-center gap-1">
+                        <div style={{
+                          width:6,
+                          height:6,
+                          borderRadius:"50%",
+                          background:"#00754B"}}>
+                        </div>
+                        <div><small>Lekki</small></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
