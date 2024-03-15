@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg py-2">
-      <div className="container-fluid mx-md-5">
+      <div className="container-fluid mx-md-5 mt-1 mt-lg-0">
         <a className="navbar-brand fw-bolder" href="#">
           FlipIt
         </a>

@@ -47,7 +47,7 @@ const LandingPage = () => {
 
         <div
           style={{ padding: "54px 0" }}
-          className="container px-2 px-md-0 py-4 py-md-5 mt-md-2 d-flex justify-content-center font-bold display-3"
+          className="container px-2 px-md-0 py-4 py-md-5 mt-md-1 d-flex justify-content-center font-bold display-3"
         >
           <p style={{ maxWidth: "60rem" }} className="text-center fs-2 fs-md-1 fw-bold">
             We Revolutionalise Commerce with Seamless Peer-to-Peer Transactions
