@@ -23,16 +23,16 @@ const Navbar = () => {
           id="navbarSupportedContent"
         >
           <input
-            className="form-control mt-1 navbar-search"
+            className="form-control mt-4 mt-lg-1 navbar-search"
             type="search"
             placeholder="Search Product"
             aria-label="Search"
             // style={{ maxWidth: "1090px" }}
           />
 
-          <ul className="d-lg-flex navbar-padding  align-items-lg-center gap-2 navbar-nav ml-2 navbar-padding">
+          <ul className="d-lg-flex navbar-padding  align-items-lg-center gap-2 navbar-nav ml-lg-2">
             <li className="nav-item">
-              <a className="  nav-link  fw-medium" href="#">
+              <a className="nav-link  fw-medium" href="#">
                 Login
               </a>
             </li>

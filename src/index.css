@@ -88,8 +88,8 @@ ul{
   padding: 0 !important;
 }
 
-.navbar-padding{
-  padding-left: 25px !important;
+.navbar-padding {
+  padding-left: 4px !important;
 }
 
 
@@ -120,6 +120,9 @@ ul{
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   /* Your CSS rules here for large devices */
+  .navbar-padding{
+    padding-left: 25px !important;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
