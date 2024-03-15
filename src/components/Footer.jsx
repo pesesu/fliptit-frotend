@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <div
       style={{ color: "#444444" }}
-      className="container-fluid mt-4 mb-5 footer-text"
+      className="container-fluid py-4 my-1 footer-text"
     >
       <div className="mx-md-5  row justify-content-center align-items-center">
         <div className="col-md-3">
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div className="col-md-3"></div>
       </div>
-      <div className="row mx-md-5 mt-2">
+      <div className="row mx-md-5 mt-2 mt-md-4">
         <p className="">&copy;{currentYear} FlipIt.com</p>
       </div>
     </div>

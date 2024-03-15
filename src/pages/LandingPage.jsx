@@ -46,10 +46,10 @@ const LandingPage = () => {
         <Navbar />
 
         <div
-          style={{ padding: "60px 0" }}
-          className="d-flex justify-content-center font-bold display-3"
+          style={{ padding: "54px 0" }}
+          className="container px-2 px-md-0 py-4 py-md-5 mt-md-2 d-flex justify-content-center font-bold display-3"
         >
-          <p style={{ maxWidth: "60rem" }} className="text-center fs-1 fw-bold">
+          <p style={{ maxWidth: "60rem" }} className="text-center fs-2 fs-md-1 fw-bold">
             We Revolutionalise Commerce with Seamless Peer-to-Peer Transactions
           </p>
         </div>
@@ -115,8 +115,8 @@ const LandingPage = () => {
           <div className="row g-4 mx-md-5 align-items-center justify-content-center">
             <h4>Listings near to you</h4>
             {productsData.map((products) => (
-              <div key={products.id} className="col-md-4 col-lg-3 mt-4">
-                <div className="card product-cards">
+              <div key={products.id} className="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div className="card product-cards shadow-sm">
                   <img
                     src={products.imagePath}
                     className="img-fluid"
