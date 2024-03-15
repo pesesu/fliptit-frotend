@@ -110,7 +110,7 @@ const LandingPage = () => {
       {/* Product Category End */}
 
       {/* Products */}
-      <div style={{ background: "#EDEDED", padding: "52px 0" }}>
+      <div style={{ background: "#EDEDED", padding: "40px 0" }}>
         <div className="container-fluid">
           <div className="row g-4 mx-md-5 align-items-center justify-content-center">
             <h4>Listings near to you</h4>
@@ -150,6 +150,14 @@ const LandingPage = () => {
               </div>
             ))}
           </div>
+          <div className="d-flex justify-content-center mt-5">
+            <a className="" href="#">
+              <button type="button" class="btn btn-dark navbar-button">
+                See More
+              </button>
+            </a>
+          </div>
+          
         </div>
       </div>
       {/* Products End */}
