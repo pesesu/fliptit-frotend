@@ -50,7 +50,7 @@ const LandingPage = () => {
           className="container px-2 px-md-0 py-4 py-md-5 mt-md-1 d-flex justify-content-center font-bold display-3"
         >
           <p style={{ maxWidth: "60rem" }} className="text-center fs-2 fs-md-1 fw-bold">
-            We Revolutionalise Commerce with Seamless Peer-to-Peer Transactions
+            Revolutionizing Commerce with Seamless Peer-to-Peer Transactions
           </p>
         </div>
       </div>
@@ -85,7 +85,7 @@ const LandingPage = () => {
                       }}
                       className="card shadow"
                     >
-                      <div className="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                      <div className="card-body mt-3 mt-md-0 text-center d-flex flex-column align-items-center justify-content-center">
                         <img
                           src={card.imagePath}
                           alt={card.name}
