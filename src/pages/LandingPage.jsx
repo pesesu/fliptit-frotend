@@ -162,7 +162,7 @@ const LandingPage = () => {
       </div>
       {/* Products End */}
       {/* Footer */}
-      <div className="footer-border">
+      <div className="">
         <Footer />
       </div>
 
