@@ -43,8 +43,6 @@ code {
   color: rgb(146, 141, 141) !important;
 }
 
-
-
 .navbar-search:active {
   outline: none ;
 }
@@ -101,6 +99,14 @@ ul{
   padding-left: 4px !important;
 }
 
+.price-filter-input {
+  width: 64px;
+  height: 38px;
+  border-radius: 0;
+  border:1px solid #00754B;
+  text-align: center;
+  outline: none !important;
+}
 
 .footer-border{
   border-top: 1px solid #cecdcd ;
