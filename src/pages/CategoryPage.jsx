@@ -32,9 +32,15 @@ const CategoryPage = () => {
             {/* <hr  className='my-4 d-lg-none'/> */}
             <div className="price-filter d-flex gap-2 align-items-center pt-1 pt-lg-0 mt-4 mt-md-3">
                 <div>Price:</div>
-                <input class="price-filter-input" id="min-price" type="text" />
+                <div className="price-filter-input-wrapper mt-3">
+                  <div className="price-filter-text"><small>Min</small></div>
+                  <input class="price-filter-input" id="min-price" type="text" />
+                </div>
                 <div style={{width:7, height:3, background:"#444444"}}  className="filter-sep"></div>
-                <input class="price-filter-input"  id="max-price" type="text" />
+                <div className="price-filter-input-wrapper mt-3">
+                  <div className="price-filter-text"><small>Max</small></div>
+                    <input class="price-filter-input"  id="max-price" type="text" />
+                </div>
             </div>
         </div>
         {/* Products */}
@@ -89,7 +95,7 @@ const CategoryPage = () => {
         </div>
       {/* Products End */}
       {/* Footer */}
-      <div className="footer-border">
+      <div>
         <Footer />
       </div>
       {/* Footer End */}

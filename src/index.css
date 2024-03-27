@@ -124,6 +124,17 @@ ul{
   object-fit: cover;
 }
 
+.price-filter-input-wrapper {
+  position: relative;
+}
+
+.price-filter-text {
+  position: absolute;
+  top: -24px;
+  left: 4px;
+  color:#6b6a6a;
+}
+
 /* Extra small devices (phones, less than 576px wide) */
 @media (max-width: 575.98px) { 
   .footer-text{

@@ -71,7 +71,7 @@ const SearchResultsPage = () => {
         </div>
       {/* Products End */}
       {/* Footer */}
-      <div className="footer-border">
+      <div>
         <Footer />
       </div>
       {/* Footer End */}
