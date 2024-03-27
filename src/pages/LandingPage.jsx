@@ -119,7 +119,7 @@ const LandingPage = () => {
                 <div className="card product-cards shadow-sm">
                   <img
                     src={products.imagePath}
-                    className="img-fluid"
+                    className="listing-img"
                     alt={products.name}
                     style={{ borderRadius: "0" }}
                   />

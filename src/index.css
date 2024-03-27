@@ -116,6 +116,12 @@ ul{
   color: #00754B;
 }
 
+.listing-img {
+  width:100%;
+  height: 14rem;
+  object-fit: cover;
+}
+
 /* Extra small devices (phones, less than 576px wide) */
 @media (max-width: 575.98px) { 
   /* Your CSS rules here for extra small devices */
@@ -126,12 +132,16 @@ ul{
 
 /* Small devices (tablets, 576px and up) */
 @media (min-width: 576px) { 
-  /* Your CSS rules here for small devices */
+  .listing-img {
+    height: 14rem;
+  }
 }
 
 /* Medium devices (desktops, 768px and up) */
 @media (min-width: 768px) { 
-  /* Your CSS rules here for medium devices */
+  .listing-img {
+    height: 10rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
