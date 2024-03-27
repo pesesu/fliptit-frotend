@@ -112,7 +112,9 @@ ul{
   border-top: 1px solid #cecdcd ;
 }
 
-
+.page-cat-name {
+  color: #00754B;
+}
 
 /* Extra small devices (phones, less than 576px wide) */
 @media (max-width: 575.98px) { 
