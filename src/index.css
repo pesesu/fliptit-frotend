@@ -144,6 +144,11 @@ ul{
   .listing-img {
     height: 10rem;
   }
+  
+  .sub-categories {
+    font-weight:500;
+  }
+  
 }
 
 /* Large devices (desktops, 992px and up) */

@@ -22,7 +22,7 @@ const CategoryPage = () => {
         </div>
         <div className="container-fluid mx-md-5 py-3">
             <h4 class="mt-md-2 mb-4" style={{fontWeight:"700"}}>Electronics</h4>
-            <div className="sub-categories d-flex flex-wrap gap-4 mt-4 mt-md-3" style={{fontWeight:500}}>
+            <div className="sub-categories d-flex flex-wrap gap-4 mt-4 mt-md-3">
                 <a href="">Phone & Accessories</a>
                 <a href="">Camera & photograpy</a>
                 <a href="">Computers & Laptops</a>
