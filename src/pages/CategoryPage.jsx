@@ -41,7 +41,7 @@ const CategoryPage = () => {
 
         <div style={{padding: "40px 0 60px" }} className="container-fluid">
           <div className="row g-4 mx-1 mx-md-5 align-items-center justify-content-center">
-            <h4 style={{fontWeight:600, lineHeight:0}}><span className='page-cat-name'>Electronics</span> near you</h4>
+            <h4 style={{fontWeight:600, lineHeight:0}}><span style={{fontWeight:400}} className='page-cat-nam'>Electronics</span> near you</h4>
             {productsData.map((products) => (
               <div key={products.id} className="col-sm-6 col-md-4 col-lg-3 mb-2">
                 <div className="card product-cards shadow-sm">
