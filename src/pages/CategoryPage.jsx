@@ -16,7 +16,7 @@ const CategoryPage = () => {
         return formattedPrice;
       };
   return (
-    <>
+    <div style={{ background: "#E9E9E9" }}>
         <div >
             <Navbar />
         </div>
@@ -43,7 +43,7 @@ const CategoryPage = () => {
           <div className="row g-4 mx-1 mx-md-5 align-items-center justify-content-center">
             <h4>Listings near you</h4>
             {productsData.map((products) => (
-              <div key={products.id} className="col-sm-6 col-md-4 col-lg-3 mt-2">
+              <div key={products.id} className="col-sm-6 col-md-4 col-lg-3 mb-2">
                 <div className="card product-cards shadow-sm">
                   <img
                     src={products.imagePath}
@@ -93,7 +93,7 @@ const CategoryPage = () => {
         <Footer />
       </div>
       {/* Footer End */}
-    </>
+    </div>
   );
 }
 
