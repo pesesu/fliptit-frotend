@@ -126,7 +126,6 @@ ul{
 
 /* Extra small devices (phones, less than 576px wide) */
 @media (max-width: 575.98px) { 
-  /* Your CSS rules here for extra small devices */
   .footer-text{
     text-align: center;
   }
@@ -153,7 +152,6 @@ ul{
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  /* Your CSS rules here for large devices */
   .navbar-padding{
     padding-left: 25px !important;
   }
