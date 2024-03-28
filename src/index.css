@@ -4,13 +4,13 @@ html {
 
 a {
   text-decoration: none;
-  color: #1C1825;
-  color: #00754B;
+  color: #433f50;
+  /* color: #00754B; */
 }
 
 a:hover {
   color: #00754B;
-  color: #1C1825;
+  /* color: #1C1825; */
 }
 
 body {
@@ -105,7 +105,7 @@ ul{
   width: 64px;
   height: 38px;
   border-radius: 0;
-  border:1px solid #1C1825;
+  border:1px solid #00754B;
   text-align: center;
   outline: none !important;
 }
@@ -155,9 +155,7 @@ ul{
     height: 10rem;
   }
   
-  .sub-categories {
-    font-weight:500;
-  }
+  
   
 }
 
