@@ -4,7 +4,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div
-      style={{ color: "#444444" }}
+      style={{ color: "#444444", background:"#ffffff" }}
       className="container-fluid py-4 my-1 footer-text"
     >
       <div className="mx-md-5  row justify-content-center align-items-center">
