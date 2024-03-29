@@ -31,7 +31,7 @@ const CategoryPage = () => {
             </div>
             {/* <hr  className='my-4 d-lg-none'/> */}
             <div className="price-filter d-flex gap-2 align-items-center pt-2 pt-lg-0 mt-3 mb-1">
-                <div className="mt-2">Price:</div>
+                <div className="mt-3">Price:</div>
                 <div className="price-filter-input-wrapper mt-3">
                   <div className="price-filter-text"><small>Min</small></div>
                   <input class="price-filter-input" id="min-price" type="text" />
