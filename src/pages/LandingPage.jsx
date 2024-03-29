@@ -152,7 +152,7 @@ const LandingPage = () => {
           </div>
           <div className="d-flex justify-content-center mt-5">
             <a className="" href="#">
-              <button type="button" class="btn btn-dark navbar-button">
+              <button type="button" className="btn btn-dark navbar-button">
                 See More
               </button>
             </a>
